@@ -17,9 +17,9 @@ const mymap = L.map('mapid', {zoomControl:true, maxZoom:10, minZoom:3}).setView(
 	}).addTo(mymap);
 	
 	
-	const districtStyle = {
-		shape: 'diamond',
-		radius: 7,
+const districtStyle = {
+	shape: 'diamond',
+	radius: 7,
         opacity: 1,
         color: 'Black',
         dashArray: '',
@@ -31,21 +31,20 @@ const mymap = L.map('mapid', {zoomControl:true, maxZoom:10, minZoom:3}).setView(
         fillColor: 'Yellow'
        };
 	
-	   const HQstyle = {
-		
-		radius: 10.000000000000002,
-        opacity: 1,
-        color: 'rgba(0,0,0,1.0)',
-        dashArray: '',
-        lineCap: 'butt',
-        lineJoin: 'miter',
-        weight: 1.0,
-        fill: true,
-        fillOpacity: 1,
-        fillColor: 'rgba(247,128,30,1.0)',
+const HQstyle = {
+	radius: 10.000000000000002,
+	opacity: 1,
+	color: 'rgba(0,0,0,1.0)',
+	dashArray: '',
+	lineCap: 'butt',
+	lineJoin: 'miter',
+	weight: 1.0,
+	fill: true,
+	fillOpacity: 1,
+	fillColor: 'rgba(247,128,30,1.0)',
 	};
 	
-	const getDivisionColor = (d) => {
+const getDivisionColor = (d) => {
     return d == "Great Lakes and Ohio River Division" ? '#df65b0' :
 			d == "Mississippi Valley Division" ? 'Teal' :
 			d == "North Atlantic Division" ? 'Turquoise' : 
@@ -58,7 +57,7 @@ const mymap = L.map('mapid', {zoomControl:true, maxZoom:10, minZoom:3}).setView(
 	};
 
 
-	const divisionStyle = (feature) => {
+const divisionStyle = (feature) => {
     return {
         fillColor: getDivisionColor(feature.properties.DIVISION),
 		weight: 2,
