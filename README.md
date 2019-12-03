@@ -1,2 +1,2 @@
 # usaceMap
-This is a map created the Leaflet Javascript library. 
+An interactive map of USACE divions, districts, and office locations using Leaflet. 
