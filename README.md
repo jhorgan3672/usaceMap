@@ -1,2 +1,2 @@
 # usaceMap
-An interactive map of USACE divions, districts, and office locations using Leaflet. 
+An interactive map of USACE divisions, districts, and office locations using Leaflet. 
